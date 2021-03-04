@@ -13,6 +13,7 @@ describe('Reduce',() => {
         it('Reduce of an array [a,b,c] with (x,y)=>x+y is abc',() => {
                     expect(reduce(['a','b','c'],(x,y) => x+y)).toEqual('abc');
         })
-
-
+          it('Reduce of an array [a,b,c] with (x,y) => x+y and intial value z is zabc', () => {
+                expect(reduce(['a','b','c'],(x,y) => x+y,'z')).toEqual('zabc');
+            })
 })
