@@ -1,6 +1,6 @@
 const reduce = (array,funcname,initial) => {
         if(array.length==0)
-            return undefined;
+            return initial;
         return null;
 }
 module.exports=reduce;
